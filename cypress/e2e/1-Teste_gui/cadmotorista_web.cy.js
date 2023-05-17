@@ -36,7 +36,7 @@ describe('Cadastro de Motorista', () => {
 
   })
 
-  it('cadastrar motorista successfully', () => {
+  it.only('cadastrar motorista successfully', () => {
 
     cy.cadastro()
     cy.get('#tabelaMotoristas_filter').type(Cypress.env('cpf'))
